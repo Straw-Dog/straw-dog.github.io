@@ -1,0 +1,272 @@
+/* TO DO:
+	detect mobile ... build mobile site
+	
+*/
+
+html, body {
+	background-color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+a img {
+	border: none;
+}
+
+a[href^="mailto"]:hover:after, #print:hover:after {
+	content: " " attr(title);
+} 
+
+a.fancy:hover:after, #print:hover:after {
+	content: " " attr(title);
+}
+
+.wrapper {
+	display:block;
+	margin:auto;
+	width:1100px;
+    height: 100%;
+	padding:0;
+	/* background-color: #CC0000; */
+	/* background-color: #666; */
+	/* background-color: #ccc; */
+}
+
+.info {
+	font: normal 1em;
+	line-height: 1.5em;
+	color: #666;
+	text-align:justify;
+}
+
+.footer {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:.7em;
+	margin:auto;
+	width:1100px;
+    height: auto;
+	text-align:center;
+}
+
+h1, h2, p {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-shadow: 0px 1px .1em #666;
+	font-size: 1.4em;
+	color: #FFF;
+}
+
+h2 {
+	font-size: 1.1em;
+	color: #cc0000;
+}
+
+p {
+	font-size: .9em;
+	color: #666;
+}
+
+/* Begin nav */
+.menu {
+	margin:auto;
+	width: 1051px;
+	height: 52px;
+	padding: 0 20px 20px 20px;
+	/* overflow:inherit; IS THIS NEEDED */
+}
+
+.spacer {
+	margin:auto;
+	width: 1100PX;
+	height: 40px;
+	padding: 0 20px 0 20px;
+}
+
+#namenav {
+	float:left;
+	border-top: 1px solid #666;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid #666;
+}
+
+#dsgnnav {
+	float:left;
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid black;
+}
+
+#nav {
+	float:left;
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid transparent;
+}
+
+#dsgnnav:hover {
+	border-top: 1px solid #CC0000;
+	border-right: 1px solid #CC0000;
+	border-bottom: 1px solid #CC0000;
+	border-left: 1px solid black;
+}
+
+#nav:hover {
+	border: 1px solid #CC0000;
+}
+/* End nav */
+
+/* Begin gallery */
+
+.gallery {
+	margin:auto;
+	width: 1051px;
+	height: 100%;
+	padding-bottom:30px;
+	overflow:hidden;
+}
+
+#thumbnail {
+	display:block;
+	float: left;
+	margin:auto;
+	padding: 30px 30px 0 0;
+}
+
+#last {
+	display: block;
+	float: right;
+	margin:auto;
+	padding: 30px 0 0 0;
+}
+	#thumbnail:hover, #last:hover {
+	opacity: 0.5;
+	}
+
+/* kbd, a.kdb {
+	text-decoration:none;
+	color: #555;
+	background-color: #ccc;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	font-size: 1.5 em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 3px 2px 4px;
+	}	
+*/
+/* End gallery */
+
+
+
+/* Begin fade */
+.fade {
+   opacity: 1;
+   transition: opacity .15s ease-in-out;
+   -moz-transition: opacity .15s ease-in-out;
+   -webkit-transition: opacity .15s ease-in-out;
+   }
+ 
+   .fade:hover {
+      opacity: 0.5;
+      }
+/* End fade */
+
+/* Begin namecross */
+.namecross {
+	margin:auto;
+	width:660px;
+	height:660px;
+	border:none;
+	padding: 0;
+}
+
+.crosstop {
+	margin:auto;
+	width:660px;
+	height:220px;
+	/* border:none;
+	padding: 0;
+	overflow:visible; */
+}
+
+.crossmid {
+	margin:auto;
+	width:660px;
+	height:220px;
+	/* height: min-content; works in IE */
+	border:none;
+	padding: 0;
+}
+
+.crossbottom {
+	margin:auto;
+	width:660px;
+	height: 220px;
+	/* height:220px;
+	border:none;
+	padding: 0; */
+}
+
+#design {
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+	border-right: 2px solid rgba(0,0,0,.4);
+	padding: 0;
+}
+
+#nameplate {
+	display:block;
+	float:left;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	border:none;
+	padding: 0;
+}
+
+#illustration {
+	display:block;
+	float:right;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	border:none;
+	padding: 0;
+}
+
+#painting {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+	/* border:none;
+	padding: 0; */
+}
+/* End namecross */
+
+/* Begin contact */
+#voice {
+	display:inline;
+	float:right;
+	margin: 50px 20px 0 0; 
+	width:275px;
+	height:180px;
+	padding:0;
+	overflow:visible;
+}
+
+#resume {
+	float:left;
+	margin: 50px 0 0 20px;
+	width: 700px;
+	height: 100%;
+}
+/* End contact */
